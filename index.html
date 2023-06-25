@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homesmart</title>
+  </head>
+  <body
+    class="max-w-[2000px] mx-auto bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-200"
+  >
+    <nav class="mx-auto p-4 bg-amber-400">
+      <div class="container mx-auto flex items-center justify-between">
+        <a
+          href="/"
+          class="focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:opacity-75 transition-opacity lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-p lg:z-50"
+          aria-label="Go to homescreen."
+        >
+          <img
+            src="./assets/logo.svg"
+            alt="home logo."
+            width="200"
+            class="w-48 md:w-64 lg:w-72"
+          />
+        </a>
+        <button
+          id="menu"
+          class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors"
+          aria-expanded="false"
+          aria-label="Open Menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <div
+          role="menubar"
+          class="hidden z-40 lg:static lg:flex lg:justify-between lg:w-full lg:shadow-none lg:flex-row items-center flex-col gap-4 absolute right-0 left-0 top-16 bg-amber-400 shadow-xl text-center p-6 text-lg"
+        >
+          <a
+            href="/"
+            role="menuitem"
+            class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors"
+            >Home</a
+          >
+          <a
+            href="/"
+            role="menuitem"
+            class="py-1 px-6 lg:mr-auto dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors"
+            >Contact</a
+          >
+          <a
+            href="/"
+            role="menuitem"
+            class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors"
+            >Login</a
+          >
+          <a
+            href="/"
+            role="menuitem"
+            class="py-2 px-6 bg-teal-900 rounded-md shadow-xl text-white hover:shadow-none focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 transition-colors"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </nav>
+    <header class="relative pt-16 md:pt-24 lg:pt-48">
+      <div
+        class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600"
+      ></div>
+      <div class="container mx-auto grid grid-rows-1 place-itmes-end px-2">
+        <img
+          class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto"
+          src="./assets/couch.png"
+          alt="couch"
+        />
+        <img
+          class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-40 sm:w-54 md:w-64 lg:w-72"
+          src="./assets/app.svg"
+          alt="app"
+        />
+      </div>
+    </header>
+    <main
+      class="grid gap-12 sm:gap-16 md:gap-24 lg:pag-32 px-8 overflow-hidden"
+    >
+      <a
+        href="#"
+        class="py-2 px-6 bg-amber-400 dark:text-neutral-900 mx-auto my-12 flex gap-2 shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-amber-400 dark:ring-offset-neutral-800"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+          />
+        </svg>
+        Download the app.
+      </a>
+    </main>
+    <script type="module" src="/main.jsx"></script>
+  </body>
+</html>
